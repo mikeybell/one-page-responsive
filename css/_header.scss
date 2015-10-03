@@ -62,6 +62,7 @@ nav li a:hover {
 	color: $yellow;
 }
 
+
 .nav-close {
 	display: none;
 }
@@ -91,6 +92,10 @@ nav li a:hover {
 @media all and (max-width: 940px) {
 	.header-text p {
 		font-size: 1.4rem;
+	}
+
+	nav {
+		top: 50px;
 	}
 }
 
