@@ -62,6 +62,11 @@ nav li a:hover {
 	color: $yellow;
 }
 
+.nav-close {
+	display: none;
+}
+
+
 .header-text {
 	position: absolute;
 	top: 30%;
@@ -96,7 +101,47 @@ nav li a:hover {
 	}
 
 	nav {
-		display: none;
+		position: fixed;
+		top: 0;
+		left: -60%;
+		right: 0;
+		height: 100vh;
+		margin-left: 0;
+		padding: 5%;
+		background: $cyan;
+		width: 50%;
+		z-index: 9999;
+		box-shadow: 3px 0px 5px 0px rgba(0, 0, 0,0.1);
+		
+	}
+
+	nav li a {
+		float: none;
+		color: white;
+		margin-left: 0;
+		margin-top: 30px;
+		display: block;
+	}
+
+	nav li:first-child {
+		margin-top: 60px;
+	}
+
+
+	nav li a:hover {
+		color: $yellow;
+	}
+
+	a.nav-close {
+		display: block;
+		position: absolute;
+		color: white;
+		font-size: 2.5rem;
+		transition: 0.2s;
+	}
+
+	.nav-close:hover {
+		color: $yellow;
 	}
 
 	.header-text {
