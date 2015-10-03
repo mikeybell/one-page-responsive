@@ -1,0 +1,157 @@
+section.deals {
+	padding: 20px 0;
+}
+
+.deals ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	li {
+		// flex: 1 0 30%;
+		width: 32%;
+		// padding: 25px;
+	}
+}
+
+.deals li {
+	position: relative;
+}
+
+.banner {
+	position: absolute;
+	margin: 0;
+	font-size: 4rem;
+	line-height: 1;
+	font-weight: 700;
+	text-align: center;
+	color: $orange;
+	span {
+		font-weight: 100;
+	}
+}
+
+.banner1 {
+	top: 20%;
+	right: 5%;
+	width: 30%;
+	color: $purple;
+}
+
+.banner2 {
+	top: 40%;
+	right: 5%;
+	width: 50%;
+}
+
+.banner3 {
+	width: 50%;
+	top: 10%;
+	left: 5%;
+	color: $green;
+	.small {
+		font-size: 2rem;
+		line-height: 1;
+		font-weight: 100;
+	}
+}
+
+.banner3 p {
+	margin: 0;
+}
+
+.banner3 p:nth-child(even) {
+	color: white;
+}
+
+.banner3 p:nth-child(2) {
+	font-weight: 100;
+}
+
+
+
+@media all and (max-width: 940px) {
+	p.banner {
+		font-size: 3.5rem;
+	}
+
+	.banner3 p {
+		font-size: 3.5rem;
+	}
+}
+
+@media all and (max-width: 767px) {
+	p.banner {
+		font-size: 3rem;
+	}	
+
+	.banner3 p {
+		font-size: 3rem;
+	}
+
+	.banner3 .small {
+		font-size: 1.4rem;
+	}
+}
+
+@media all and (max-width: 480px) {
+	
+	p.banner {
+		font-size: 1.8rem;
+	}
+	
+	.banner1 {
+		top: 26%;
+	}
+
+	.banner2 {
+		right: 4%;
+	}
+
+	.banner3 p {
+		font-size: 1.8rem;
+	}
+
+	.banner3 .small {
+		font-size: 1rem;
+	}
+
+}
+
+@media all and (max-width: 400px) {
+	section.deals {
+		padding-top: 0;
+	}
+
+	.deals ul {
+		flex-direction: column;
+		li {
+			width: 100%;
+			img {
+				display: block;
+				min-width: 100%;
+			}
+		}
+	}
+
+	p.banner {
+		font-size: 3.5rem;
+	}
+
+	.banner3 p {
+		font-size: 3.5rem;
+	}
+
+	.banner3 .small {
+		font-size: 2rem;
+	}
+
+	.banner3 {
+		top: 25%
+	}
+
+	
+}
+
+
+

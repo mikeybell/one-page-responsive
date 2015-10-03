@@ -1,0 +1,276 @@
+div.review-gal {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.review-box {
+	width: 31%;
+	padding: 20px;
+	margin-bottom: 30px;
+	border-radius: 2px;
+	text-align: center;
+	color: white;
+	box-shadow: 0 1px 5px #666;
+	img {
+		border-radius: 50%;
+	}
+	p {
+		margin: 0;
+	}
+	.rev-text {
+		font-size: 1.8rem;
+		line-height: 1.8;
+		font-weight: 300;
+		margin: 30px 0;
+	}
+	.name {
+		font-size: 1.4rem;
+	}
+	.position {
+		font-size: 1.4rem;
+	}
+}
+
+div.review1 {
+	background: $darkgreen;
+	img {
+		border: 6px solid darken($darkgreen, 10%);
+	}
+	.rev-text::after {
+		content:' ';
+		display: block;
+    	border-bottom: 1px solid darken($darkgreen, 10%);
+    	width: 15%;
+    	margin: 30px auto;
+	}
+}
+
+div.review2 {
+	background: $darkyellow;
+	img {
+		border: 6px solid darken($darkyellow, 10%);
+	}
+	.rev-text::after {
+		content:' ';
+		display: block;
+    	border-bottom: 1px solid darken($darkyellow, 10%);
+    	width: 15%;
+    	margin: 30px auto;
+	}
+}
+
+div.review3 {
+	background: $burntorange;
+	img {
+		border: 6px solid darken($burntorange, 10%);
+	}
+	.rev-text::after {
+		content:' ';
+		display: block;
+    	border-bottom: 1px solid darken($burntorange, 10%);
+    	width: 15%;
+    	margin: 30px auto;
+	}
+}
+
+div.review4 {
+	background: $magenta;
+	img {
+		border: 6px solid darken($magenta, 10%);
+	}
+	.rev-text::after {
+		content:' ';
+		display: block;
+    	border-bottom: 1px solid darken($magenta, 10%);
+    	width: 15%;
+    	margin: 30px auto;
+	}
+}
+
+div.review5 {
+	background: $lavender;
+	img {
+		border: 6px solid darken($lavender, 10%);
+	}
+	.rev-text::after {
+		content:' ';
+		display: block;
+    	border-bottom: 1px solid darken($lavender, 10%);
+    	width: 15%;
+    	margin: 30px auto;
+	}
+}
+
+div.review6 {
+	background: $bluepurple;
+	img {
+		border: 6px solid darken($bluepurple, 10%);
+	}
+	.rev-text::after {
+		content:' ';
+		display: block;
+    	border-bottom: 1px solid darken($bluepurple, 10%);
+    	width: 15%;
+    	margin: 30px auto;
+	}
+}
+
+// DISCOUNT
+section.discount {
+	background: $burntorange;
+	background-size: cover;
+	padding: 30px;
+	h2 {
+		color: white;
+		padding-top: 0;
+	}
+	h2::after {
+		border-bottom: 1px solid white;
+	}
+	form {
+		text-align: center;
+		input[type=email]  {
+			width: 30%;
+			background: none;
+			padding: 10px 0;
+			margin-right: 20px;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+			border-bottom: 1px solid white;
+			color: white;
+		}
+		input[type=email]::-webkit-input-placeholder {
+			color: white;
+		}
+		input[type=submit] {
+			font-size: 1.4rem;
+			line-height: 1;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 10px 20px;
+			margin-right: 5px;
+			color: white;
+			border-radius: 2px;
+			border: none;
+			box-shadow: 0px 1px 5px 0px #666;
+			background: $darkyellow;
+			transition: 0.2s;
+		}
+		input[type=submit]:hover {
+			background: darken($darkyellow, 10%);
+		}
+	}
+}
+
+
+// LATEST NEWS
+div.news-gal {
+	padding-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	& > * {
+		width: 32%;
+	}
+	div.news-item {
+		position: relative;
+		box-shadow: 0 1px 5px #666;
+		img {
+			width: 100%;
+			display: block;
+		}
+		div.news-text {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 20px 20px 10px;
+			width: 100%;
+			background: rgba(0,0,0,0.7);
+			color: white;
+			h3, p {
+				margin: 0;
+			}
+			a {
+				font-size: 1.2rem;
+				color: white;
+				margin-top: 20px;
+				display: block;
+				text-decoration: underline;
+				transition: 0.2s;
+			}
+			a:hover {
+				color: $cyan;
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 940px) {
+	div.review-gal {
+		justify-content: space-around;
+	}
+
+	div.news-gal {
+		justify-content: space-around;
+	}
+}
+
+
+@media all and (max-width: 767px) {
+	div.review-gal {
+		justify-content: space-around;
+	}
+
+	div.news-gal {
+		justify-content: space-around;
+		div.news-item {
+			max-width: 225px;
+		}
+	}
+}
+
+@media all and (max-width: 480px) {
+	div.review-box {
+		width: 47%;
+	}
+
+	section.discount form input[type=email] {
+		width: 100%;
+		display: block;
+	}
+
+	form input[type=submit] {
+		text-align: center;
+		margin-top: 30px;
+	}
+	
+	div.news-gal .news-item {
+		width: 47%;
+		margin-bottom: 20px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	div.review-box {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	div.news-gal {
+		div.news-item {
+			width: 100%;
+		}
+	}
+
+
+}
+
+
+
+
+
