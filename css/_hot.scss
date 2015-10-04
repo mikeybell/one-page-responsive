@@ -123,6 +123,9 @@ div.red-box {
 	& > * {
 		flex: 1 0 50%;
 	}
+	img {
+		width: 100%;
+	}
 	.red-text {
 		padding: 0 3%;
 	}

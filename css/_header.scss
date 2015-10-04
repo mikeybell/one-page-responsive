@@ -3,6 +3,9 @@ header {
 	// background: url(../img/header.jpg) no-repeat;
 	// background-size: 100%;
 	// padding: 15% 0 20% 45%;
+	img {
+		width: 100%;
+	}
 }
 
 .left-menu {
@@ -108,15 +111,15 @@ nav li a:hover {
 	nav {
 		position: fixed;
 		top: 0;
-		left: -60%;
+		left: -30%;
 		right: 0;
 		height: 100vh;
 		margin-left: 0;
 		padding: 5%;
 		background: $cyan;
-		width: 50%;
+		width: 30%;
 		z-index: 9999;
-		box-shadow: 3px 0px 5px 0px rgba(0, 0, 0,0.1);
+		// box-shadow: 3px 0px 5px 0px rgba(0, 0, 0,0.1);
 		
 	}
 

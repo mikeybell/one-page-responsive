@@ -9,6 +9,9 @@ section.callouts {
 
 div.call-left {
 	position: relative;
+	img {
+		width: 100%;
+	}
 	div.call-left-text {
 		position: absolute;
 		top: 25%;
@@ -35,6 +38,9 @@ div.call-left {
 
 div.call-right {
 	position: relative;
+	img {
+		width: 100%;
+	}
 	div.call-right-text {
 		position: absolute;
 		top: 20%;
